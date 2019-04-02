@@ -30,7 +30,7 @@
     <ClInclude Include="Slice.h" />
     <ClInclude Include="TcpConn.h" />
     <ClInclude Include="TcpServer.h" />
-    <ClInclude Include="Test.h" />
+    <ClInclude Include="test\Test.h" />
     <ClInclude Include="Threads.h" />
     <ClInclude Include="timer.h" />
     <ClInclude Include="Util.h" />
@@ -44,7 +44,7 @@
     <ClCompile Include="PollerBase.cpp" />
     <ClCompile Include="TcpConn.cpp" />
     <ClCompile Include="TcpServer.cpp" />
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="test\Test.cpp" />
     <ClCompile Include="Threads.cpp" />
     <ClCompile Include="Util.cpp" />
   </ItemGroup>

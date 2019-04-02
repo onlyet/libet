@@ -13,13 +13,13 @@
 #include <algorithm>
 
 #include "Test.h"
-#include "Logger.h"
-#include "TcpServer.h"
-#include "TcpConn.h"
-#include "EventBase.h"
-#include "Timer.h"
-#include "base64.h"
-#include "Util.h"
+#include "../Logger.h"
+#include "../TcpServer.h"
+#include "../TcpConn.h"
+#include "../EventBase.h"
+#include "../Timer.h"
+#include "../base64.h"
+#include "../Util.h"
 
 using namespace std;
 //using LDebug = spdlog::debug;
@@ -122,21 +122,6 @@ void HeartbeatTest()
 		}
 	});
 	base.Loop();
-}
-
-void TestLog()
-{
-	//static std::shared_ptr<spdlog::logger> combined_logger;
-	//combined_logger"hello" << endl;
-	//spdlog::debug("hello");
-	//spdlog::debug("hello");
-	//spdlog::set_level(spdlog::level::debug);
-	//debug("hello");
-	//LogDebug("ok");
-
-	//LogDebug("JUST A TEST");
-	//LogInfo("BBBBBBBBBBBBB");
-	//DEBUG << "TEST <<" << "hello ";
 }
 
 Buffer GenerateData()

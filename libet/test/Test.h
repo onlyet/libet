@@ -1,5 +1,5 @@
 #pragma once
-#include "Logger.h"
+#include "../Logger.h"
 
 #define FIVE_K_TXT "E:\\File\\5K.txt"
 #define TWENTY_K_TXT "E:\\File\\20K.txt"
@@ -8,23 +8,27 @@
 #define TWOM_TXT "E:\\File\\2M.txt"
 #define BUF_SIZE 1024
 
+// 测试TCP服务器
 void TestTcpServer();
 
+//测试定时器
 void TestTimer();
 
+//测试关闭闲置连接
 void IdleCloseTest();
 
+//测试echo和心跳
 void HeartbeatTest();
 
-void TestLog();
-
-//Buffer GenerateData();
-
+//测试定时发送txt文本
 void PeriodicallySendTest();
 
+//测试MultiBase发送txt文本
 void MultiEbPeriodicallySendTest();
 
+//测试单EventBase，工作线程池
 void OneIoMultiWork();
 
+//测试单例模式
 void TestSingleton();
 
