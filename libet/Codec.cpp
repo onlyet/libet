@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int LengthCodec::TryDecode(Slice data, Slice & msg)
+int LengthCodec::TryDecode(Slice data, Slice& msg)
 {
 	//接收缓冲区不够一个包头大小
 	if (data.size() <= 4)
@@ -31,7 +31,7 @@ int LengthCodec::TryDecode(Slice data, Slice & msg)
 	return 0;
 }  
 
-void LengthCodec::Encode(Slice msg, Buffer & buf)
+void LengthCodec::Encode(Slice msg, Buffer& buf)
 {
 	buf.appendValue(htonl(4 + (int32_t)msg.size())).append(msg);
 	//buf.appendValue(4 + (int32_t)msg.size()).append(msg);
